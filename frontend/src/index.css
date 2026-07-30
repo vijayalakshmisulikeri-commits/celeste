@@ -1,0 +1,96 @@
+/* index.css
+   ----------
+   Design tokens for Celeste -- warm peach & terracotta, cream cards,
+   soft rounded shapes. Friendlier and more illustrated-app-adjacent
+   than a strict neutral palette, while staying out of primary blue/
+   purple SaaS territory.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root {
+  /* Color -- warm peach & terracotta */
+  --color-bg: #FBEEDD;          /* soft peach-cream background */
+  --color-bg-deep: #F6DAB6;     /* deeper peach, used for the header gradient */
+  --color-surface: #FFFDF9;     /* cream card surface */
+  --color-ink: #4A3324;         /* warm cocoa -- primary text */
+  --color-muted: #A98F72;       /* warm sand -- secondary text */
+  --color-border: #F0DCBE;      /* soft peach border */
+  --color-accent: #E38B52;      /* terracotta orange -- primary actions */
+  --color-accent-soft: #FCE6CD; /* light peach highlight bg */
+  --color-gold: #D9A054;        /* honey -- medium priority */
+  --color-high: #D06C48;        /* warm coral -- high priority */
+  --color-low: #C9B79C;         /* sand -- low priority */
+  --color-danger: #C15A3E;
+  --color-success: #6E8F5C;     /* soft olive-green -- success */
+
+  /* Category accents */
+  --color-personal: #E38B52;
+  --color-academic: #B4703D;
+  --color-reminder: #D9A054;
+
+  /* Type */
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  /* Spacing / shape */
+  --radius: 12px;
+  --radius-lg: 20px;
+  --shadow-card: 0 1px 2px rgba(74, 51, 36, 0.05), 0 6px 18px rgba(74, 51, 36, 0.07);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, var(--color-bg-deep) 0%, var(--color-bg) 340px);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+button, input, textarea, select {
+  font-family: inherit;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--color-accent);
+  width: 15px;
+  height: 15px;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

@@ -1,0 +1,32 @@
+.profile {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+.profile-sub {
+  color: var(--color-muted);
+  font-size: 13.5px;
+  margin: 4px 0 24px;
+}
+
+.profile-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+}
+
+.profile-card .field input:disabled {
+  color: var(--color-muted);
+  cursor: not-allowed;
+}
+
+.profile-message {
+  background: #EAF3EC;
+  color: var(--color-success);
+  font-size: 13px;
+  padding: 10px 12px;
+  border-radius: var(--radius);
+  margin-bottom: 16px;
+}

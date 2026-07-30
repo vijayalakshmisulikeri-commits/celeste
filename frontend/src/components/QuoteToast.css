@@ -1,0 +1,27 @@
+.quote-toast {
+  position: fixed;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-ink);
+  color: var(--color-bg);
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-size: 13.5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 8px 24px rgba(58, 46, 34, 0.25);
+  z-index: 100;
+  animation: quote-rise 0.25s ease;
+}
+
+.quote-mark {
+  color: var(--color-gold);
+  font-weight: 600;
+}
+
+@keyframes quote-rise {
+  from { opacity: 0; transform: translate(-50%, 8px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
+}

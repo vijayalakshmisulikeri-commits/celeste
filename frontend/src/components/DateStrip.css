@@ -1,0 +1,43 @@
+.date-strip {
+  display: flex;
+  gap: 8px;
+  margin: 14px 0 22px;
+  overflow-x: auto;
+}
+
+.date-pill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  flex-shrink: 0;
+  min-width: 46px;
+}
+
+.date-month {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--color-muted);
+  text-transform: uppercase;
+}
+
+.date-num {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.date-pill.today {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.date-pill.today .date-month,
+.date-pill.today .date-num {
+  color: white;
+}

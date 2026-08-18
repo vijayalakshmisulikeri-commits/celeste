@@ -62,7 +62,7 @@ Create a `.env` file in `frontend/` if your backend isn't at the default
 VITE_API_URL=http://localhost:8000
 ```
 
-## Going live (free tier, real persistence)
+## Going live 
 
 **1. Database — MongoDB Atlas**
 - Create a free cluster at https://www.mongodb.com/cloud/atlas
@@ -91,7 +91,7 @@ In `main.py`, change `allow_origins=["*"]` to
 `allow_origins=["https://celeste.vercel.app"]` (your real frontend URL),
 then redeploy the backend.
 
-## Architecture notes (useful for interviews)
+## Architecture notes
 
 - **Separation of concerns**: `fetch`/`clean`/`analyze`-style split — `models.py`
   defines shape, `database.py` handles the connection, `auth.py` handles
